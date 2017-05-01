@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D20250FC1EB51EC80049064A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20250FB1EB51EC80049064A /* AppDelegate.swift */; };
-		D20250FE1EB51EC80049064A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20250FD1EB51EC80049064A /* ViewController.swift */; };
+		D20250FE1EB51EC80049064A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20250FD1EB51EC80049064A /* DetailViewController.swift */; };
 		D20251011EB51EC80049064A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20250FF1EB51EC80049064A /* Main.storyboard */; };
 		D20251031EB51EC80049064A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20251021EB51EC80049064A /* Assets.xcassets */; };
 		D20251061EB51EC80049064A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20251041EB51EC80049064A /* LaunchScreen.storyboard */; };
 		D20251111EB51EC80049064A /* GetLyricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20251101EB51EC80049064A /* GetLyricsTests.swift */; };
+		D202511C1EB5203B0049064A /* SongNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202511B1EB5203B0049064A /* SongNameTableViewController.swift */; };
+		D233BF4C1EB663C200387D63 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D233BF4B1EB663C200387D63 /* Constants.swift */; };
+		D233BF501EB6827C00387D63 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D233BF4F1EB6827C00387D63 /* Song.swift */; };
+		D23D422F1EB536BD000ACB9A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D422E1EB536BD000ACB9A /* SearchViewController.swift */; };
+		DC687E2EC81624432EADF01A /* Pods_GetLyrics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BD96611B3CC3BE39111246 /* Pods_GetLyrics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1BE312E376AE998FD5E8AC /* Pods-GetLyrics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetLyrics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetLyrics/Pods-GetLyrics.debug.xcconfig"; sourceTree = "<group>"; };
+		3EB09AC38430658765AF1922 /* Pods-GetLyrics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetLyrics.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetLyrics/Pods-GetLyrics.release.xcconfig"; sourceTree = "<group>"; };
+		73BD96611B3CC3BE39111246 /* Pods_GetLyrics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetLyrics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20250F81EB51EC80049064A /* GetLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20250FB1EB51EC80049064A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D20250FD1EB51EC80049064A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D20250FD1EB51EC80049064A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D20251001EB51EC80049064A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D20251021EB51EC80049064A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20251051EB51EC80049064A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +44,10 @@
 		D202510C1EB51EC80049064A /* GetLyricsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetLyricsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20251101EB51EC80049064A /* GetLyricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLyricsTests.swift; sourceTree = "<group>"; };
 		D20251121EB51EC80049064A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D202511B1EB5203B0049064A /* SongNameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongNameTableViewController.swift; sourceTree = "<group>"; };
+		D233BF4B1EB663C200387D63 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D233BF4F1EB6827C00387D63 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		D23D422E1EB536BD000ACB9A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC687E2EC81624432EADF01A /* Pods_GetLyrics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1249859665A2D472CD73EAB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F1BE312E376AE998FD5E8AC /* Pods-GetLyrics.debug.xcconfig */,
+				3EB09AC38430658765AF1922 /* Pods-GetLyrics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D5F190A9CEEF55B1A866B6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73BD96611B3CC3BE39111246 /* Pods_GetLyrics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D20250EF1EB51EC80049064A = {
 			isa = PBXGroup;
 			children = (
 				D20250FA1EB51EC80049064A /* GetLyrics */,
 				D202510F1EB51EC80049064A /* GetLyricsTests */,
 				D20250F91EB51EC80049064A /* Products */,
+				1249859665A2D472CD73EAB4 /* Pods */,
+				4D5F190A9CEEF55B1A866B6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				D20250FB1EB51EC80049064A /* AppDelegate.swift */,
-				D20250FD1EB51EC80049064A /* ViewController.swift */,
+				D20250FD1EB51EC80049064A /* DetailViewController.swift */,
+				D23D422E1EB536BD000ACB9A /* SearchViewController.swift */,
+				D233BF4F1EB6827C00387D63 /* Song.swift */,
+				D202511B1EB5203B0049064A /* SongNameTableViewController.swift */,
 				D20250FF1EB51EC80049064A /* Main.storyboard */,
+				D233BF4B1EB663C200387D63 /* Constants.swift */,
 				D20251021EB51EC80049064A /* Assets.xcassets */,
 				D20251041EB51EC80049064A /* LaunchScreen.storyboard */,
 				D20251071EB51EC80049064A /* Info.plist */,
@@ -103,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20251151EB51EC80049064A /* Build configuration list for PBXNativeTarget "GetLyrics" */;
 			buildPhases = (
+				D8936692546715C3EB49892C /* [CP] Check Pods Manifest.lock */,
 				D20250F41EB51EC80049064A /* Sources */,
 				D20250F51EB51EC80049064A /* Frameworks */,
 				D20250F61EB51EC80049064A /* Resources */,
+				131C0A449A8BEC7E38A285B2 /* [CP] Embed Pods Frameworks */,
+				5360D7F7401CA0F28BBA3627 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +185,7 @@
 				TargetAttributes = {
 					D20250F71EB51EC80049064A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U68GR2TQE5;
 						ProvisioningStyle = Automatic;
 					};
 					D202510B1EB51EC80049064A = {
@@ -194,12 +234,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		131C0A449A8BEC7E38A285B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GetLyrics/Pods-GetLyrics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5360D7F7401CA0F28BBA3627 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GetLyrics/Pods-GetLyrics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8936692546715C3EB49892C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D20250F41EB51EC80049064A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20250FE1EB51EC80049064A /* ViewController.swift in Sources */,
+				D233BF501EB6827C00387D63 /* Song.swift in Sources */,
+				D233BF4C1EB663C200387D63 /* Constants.swift in Sources */,
+				D23D422F1EB536BD000ACB9A /* SearchViewController.swift in Sources */,
+				D20250FE1EB51EC80049064A /* DetailViewController.swift in Sources */,
+				D202511C1EB5203B0049064A /* SongNameTableViewController.swift in Sources */,
 				D20250FC1EB51EC80049064A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,8 +429,10 @@
 		};
 		D20251161EB51EC80049064A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1BE312E376AE998FD5E8AC /* Pods-GetLyrics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U68GR2TQE5;
 				INFOPLIST_FILE = GetLyrics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.domronan.GetLyrics;
@@ -349,8 +443,10 @@
 		};
 		D20251171EB51EC80049064A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB09AC38430658765AF1922 /* Pods-GetLyrics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U68GR2TQE5;
 				INFOPLIST_FILE = GetLyrics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.domronan.GetLyrics;
@@ -406,6 +502,7 @@
 				D20251171EB51EC80049064A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20251181EB51EC80049064A /* Build configuration list for PBXNativeTarget "GetLyricsTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +511,7 @@
 				D202511A1EB51EC80049064A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
