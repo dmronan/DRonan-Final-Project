@@ -20,12 +20,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    self.navigationController?.navigationBar.tintColor = UIColor.red
+        self.navigationController?.navigationBar.tintColor = UIColor.red
 
         
-songName.text = songObject.name
-artistName.text = songObject.artist
-lyricsView.text = songObject.lyrics
+        songName.text = songObject.name
+        artistName.text = songObject.artist
+        lyricsView.text = songObject.lyrics
     
     }
 

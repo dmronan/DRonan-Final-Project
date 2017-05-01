@@ -19,6 +19,8 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var artistResult: UITextView!
     @IBOutlet weak var lyricsResult: UITextView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var musixmatchLine: UILabel!
+    
     
     
     var songName: String?
@@ -54,15 +56,17 @@ class SearchViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    //MARK:- Functions
     
     func getSong(completed: @escaping () -> ()) {
         
-        let songURL = urlBase + newTrack! + "&q_artist=" + newArtist! + APIKey
-        
-        
         saveButton.isEnabled = true
         
-        //        self.newSong = Song.init()
+        let songURL = urlBase + newTrack! + "&q_artist=" + newArtist! + APIKey
         
         Alamofire.request(songURL).responseJSON { response in
             
@@ -104,6 +108,7 @@ class SearchViewController: UIViewController {
     completed()
         }
     }
+    
     @IBAction func searchButtonPressed(_ sender: UIButton) {
         
         q_track = songTextField.text!
@@ -113,8 +118,10 @@ class SearchViewController: UIViewController {
         
         saveButton.isEnabled = true
         view.endEditing(true)
+        musixmatchLine.isHidden = false
         
         getSong {
+            
             self.getLyrics {
                 
                 self.songObject = Song(name: self.songResult.text, artist: self.artistResult.text, lyrics: self.lyricsResult.text)
@@ -122,11 +129,9 @@ class SearchViewController: UIViewController {
             }
         }
     }
-
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-
+    
+    //MARK:- Segues
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if saveButton == sender as! UIBarButtonItem {
             

@@ -21,46 +21,6 @@ class Song {
     self.artist = artist
     self.lyrics = lyrics
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//import Foundation
-//import UIKit
-//
-//class Song: NSObject {
-//    
-//    var name: String?
-//    var artist: String?
-//    var lyrics: String?
-//    
-//    override init(){
-//        super.init()
-//        self.name = ""
-//        self.artist = ""
-//        self.lyrics = ""
-//    }
-//    
-//    
-//}
-
+    }
 
 }

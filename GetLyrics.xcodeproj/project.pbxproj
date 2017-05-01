@@ -110,12 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				D20250FB1EB51EC80049064A /* AppDelegate.swift */,
-				D20250FD1EB51EC80049064A /* DetailViewController.swift */,
-				D23D422E1EB536BD000ACB9A /* SearchViewController.swift */,
-				D233BF4F1EB6827C00387D63 /* Song.swift */,
 				D202511B1EB5203B0049064A /* SongNameTableViewController.swift */,
-				D20250FF1EB51EC80049064A /* Main.storyboard */,
+				D23D422E1EB536BD000ACB9A /* SearchViewController.swift */,
+				D20250FD1EB51EC80049064A /* DetailViewController.swift */,
+				D233BF4F1EB6827C00387D63 /* Song.swift */,
 				D233BF4B1EB663C200387D63 /* Constants.swift */,
+				D20250FF1EB51EC80049064A /* Main.storyboard */,
 				D20251021EB51EC80049064A /* Assets.xcassets */,
 				D20251041EB51EC80049064A /* LaunchScreen.storyboard */,
 				D20251071EB51EC80049064A /* Info.plist */,

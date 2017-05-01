@@ -61,6 +61,7 @@ class SongNameTableViewController: UITableViewController {
         return cell
     }
  
+    //MARK:- Segues
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetail" {
@@ -68,7 +69,6 @@ class SongNameTableViewController: UITableViewController {
             let destinationViewController = segue.destination as! DetailViewController
             let selectedSong = songsArray[indexPath.row]
             destinationViewController.songObject = selectedSong
-            print("This is \(selectedSong)")
         }
     }
     
@@ -77,7 +77,7 @@ class SongNameTableViewController: UITableViewController {
         {
             songsArray.append(song)
 self.tableView.reloadData()
+            
         }
     }
-    
 }
